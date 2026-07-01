@@ -1,184 +1,379 @@
 <!DOCTYPE HTML>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>Lei Kang (Nikola Kang) | 康雷</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Lei Kang - Personal Homepage">
+  <meta name="keywords" content="Lei Kang, Nikola Kang, 康雷, Peking University, Embodied AI, Robotics, VLA, Simulation">
+  <meta name="author" content="Lei Kang">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="author" content="Yuxing Long">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lei Kang | 康雷</title>
 
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏕️</text></svg>">
-  </head>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/icon.png">
 
-  <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:60%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Lei Kang | 康雷
-                </p>
-                <p>
-                  I am a second-year master's student at <strong>Peking University</strong>, and I obtained my bachelor's degree in <strong>Computer Science</strong> from <strong>Beijing Jiaotong University</strong>.
-I am advised by
-<a href="https://researchgroups.pku.edu.cn/microcavity" target="_blank">
-<strong>Yunfeng Xiao</strong>
-</a>.
-</p>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background-color: #ffffff;
+    }
 
-<p>
-My primary research interests include <strong>robotics</strong>, <strong>embodied intelligence</strong>,
-<strong>embodied planning with large models</strong>, and <strong>quantum computing</strong>.
-</p>
+    a {
+      color: #1772d0;
+      text-decoration: none;
+    }
 
-                <p>
-                 Email: nikola@stu.pku.edu.cn
-                </p>
-                <p style="text-align:center">
-                  <a href="nikola@stu.pku.edu.cn">Email</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/Niko-kang">Github</a> &nbsp;/&nbsp;
-		  <a href="https://scholar.google.com/citations?user=DhJp4ZEAAAAJ&hl=zh-CN">Google Scholar</a>
-                </p>
-              </td>
-              <td style="padding:2.5%;width:40%;max-width:40%;text-align:center;">
-                <a href="images/photo.jpg"><img style="width:70%;max-width:70%" alt="profile photo" src="images/photo.jpg" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
-          
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    a:hover {
+      color: #f09228;
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      margin-top: 28px;
+      margin-bottom: 12px;
+      font-size: 22px;
+      font-weight: 700;
+      color: #111;
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 4px;
+    }
+
+    .name-cn {
+      color: #555;
+      font-weight: 400;
+    }
+
+    .profile-img {
+      border-radius: 12px;
+      width: 100%;
+      max-width: 220px;
+    }
+
+    .papertitle {
+      font-size: 16px;
+      font-weight: 700;
+      color: #111;
+    }
+
+    .paper-card {
+      padding: 20px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .paper-img {
+      width: 160px;
+      max-width: 100%;
+      border-radius: 8px;
+      border: 1px solid #eee;
+    }
+
+    .highlight {
+      background: linear-gradient(120deg, #fff3a3 0%, #fff8d6 100%);
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 12px;
+      padding: 2px 8px;
+      margin: 4px 5px 4px 0;
+      border-radius: 999px;
+      background: #f0f4ff;
+      color: #2f5aac;
+      font-weight: 500;
+    }
+
+    .tag-highlight {
+      background: #fff1b8;
+      color: #8a5a00;
+    }
+
+    .paper-note {
+      color: #555;
+      font-size: 14px;
+      margin-top: 8px;
+    }
+
+    .news-list li {
+      margin-bottom: 6px;
+    }
+
+    .small {
+      font-size: 14px;
+      color: #555;
+    }
+
+    table {
+      border-spacing: 0;
+    }
+
+    @media screen and (max-width: 700px) {
+      .profile-table td {
+        display: block;
+        width: 100% !important;
+        text-align: left !important;
+      }
+
+      .publication-table td {
+        display: block;
+        width: 100% !important;
+      }
+
+      .paper-img {
+        width: 100%;
+        max-width: 260px;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <table style="width:100%;max-width:900px;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr>
+        <td style="padding:0">
+
+          <!-- Header -->
+          <table class="profile-table" style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
               <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Publications</h2>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
+                <td style="padding:2.5%;width:68%;vertical-align:middle">
+                  <h1>
+                    Lei Kang <span class="name-cn">| 康雷</span>
+                  </h1>
 
-      <tr onmouseout="realappliance_stop()" onmouseover="realappliance_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='realappliance_image'>
-            <img src='images/2025RealAppliance.jpg' width="170"></div>
-            <img src='images/2025RealAppliance.jpg' width="170">
-          </div>
-          <script type="text/javascript">
-            function realappliance_start() {
-              document.getElementById('realappliance_image').style.opacity = "1";
-            }
+                  <p>
+                    I am a second-year master's student at
+                    <a href="https://www.pku.edu.cn/">Peking University</a>,
+                    advised by
+                    <a href="https://researchgroups.pku.edu.cn/">Prof. Yunfeng Xiao</a>.
+                    I received my bachelor's degree in Computer Science from
+                    Beijing Jiaotong University.
+                  </p>
 
-            function realappliance_stop() {
-              document.getElementById('realappliance_image').style.opacity = "0";
-            }
-            realappliance_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="">
-            <span class="papertitle">RealAppliance: Let High-fidelity Appliance Assets Controllable and Workable as Aligned Real Manuals</span>
-          </a>
-          <br>
-          Yuzheng Gao*, Yuxing Long*, Lei Kang, Yuchong Guo, Ziyan Yu, Shangqing Mao, Jiyao Zhang, Ruihai Wu, Dongjiang Li, Hui Shen, Hao Dong
-          <br>
-          <em>Arxiv</em>
-          <br>
-          <a href="https://www.arxiv.org/abs/2512.00287">Paper</a>
-	  /
-	  <a href="https://realappliance.github.io/">Project</a>
-          <p></p>
-          <p>
-          The first appliance digital assets controllable and workable as aligned real manuals.
+                  <p>
+                    My research focuses on <strong>embodied intelligence</strong>,
+                    <strong>robot learning</strong>, <strong>vision-language-action models</strong>,
+                    and <strong>simulation-based data generation and evaluation</strong>.
+                    I am particularly interested in building controllable, scalable, and physically grounded
+                    environments for training and evaluating generalist robot policies.
+                  </p>
+
+                  <p>
+                    Email:
+                    <a href="mailto:nikola@stu.pku.edu.cn">nikola@stu.pku.edu.cn</a>
+                  </p>
+
+                  <p style="text-align:left">
+                    <a href="mailto:nikola@stu.pku.edu.cn">Email</a>
+                    &nbsp;/&nbsp;
+                    <a href="https://github.com/Niko-kang">Github</a>
+                    &nbsp;/&nbsp;
+                    <a href="https://scholar.google.com/">Google Scholar</a>
+                  </p>
+                </td>
+
+                <td style="padding:2.5%;width:32%;max-width:32%;text-align:center;vertical-align:middle">
+                  <img class="profile-img" alt="profile photo" src="images/profile.jpg">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- News -->
+          <h2>News</h2>
+          <ul class="news-list">
+            <li>
+              <strong>Jun 2026:</strong>
+              Our paper <em>JoyAI-Sim</em> is available on arXiv.
+            </li>
+            <li>
+              <strong>2026:</strong>
+              <em>RealAppliance</em> is highlighted as my representative project in embodied appliance interaction.
+            </li>
+          </ul>
+
+          <!-- Publications -->
+          <h2>Selected Publications</h2>
+
+          <table class="publication-table" style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+
+              <!-- RealAppliance -->
+              <tr class="paper-card">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img class="paper-img" src="images/realappliance.png" alt="RealAppliance">
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://realappliance.github.io/">
+                    <span class="papertitle">
+                      <span class="highlight">
+                        RealAppliance: Let High-fidelity Appliance Assets Controllable and Workable as Aligned Real Manuals
+                      </span>
+                    </span>
+                  </a>
+
+                  <br>
+
+                  Yuzheng Gao*, Yuxing Long*, <strong>Lei Kang</strong>, Yuchong Guo, Ziyan Yu,
+                  Shangqing Mao, Jiyao Zhang, Ruihai Wu, Dongjiang Li, Hui Shen, Hao Dong
+
+                  <br>
+                  <em>arXiv</em>
+                  <br>
+
+                  <a href="https://www.arxiv.org/abs/2606.17846">Paper</a>
+                  /
+                  <a href="https://realappliance.github.io/">Project</a>
+
+                  <br>
+
+                  <span class="tag tag-highlight">Highlighted</span>
+                  <span class="tag">Embodied AI</span>
+                  <span class="tag">Appliance Digital Twins</span>
+                  <span class="tag">Simulation</span>
+
+                  <p class="paper-note">
+                    High-fidelity controllable appliance digital twins aligned with real manuals for embodied interaction,
+                    instruction following, state-aware operation, and realistic appliance evaluation.
+                  </p>
+                </td>
+              </tr>
+
+              <!-- JoyAI-Sim -->
+              <tr class="paper-card">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img class="paper-img" src="images/joyaisim.png" alt="JoyAI-Sim">
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2606.16776">
+                    <span class="papertitle">
+                      JoyAI-Sim: A Simulation-Enabled Interconversion Toolchain for the Embodied Data Pyramid
+                    </span>
+                  </a>
+
+                  <br>
+
+                  Peidong Liu, Yongce Liu, Songyan Guo, Fuyuan Ma, Zhihao Yuan, Ao Li,
+                  Zengjue Chen, Wenhao Li, Tianle Zhang, Mingyang Li, Jiale Zhang, Junzhe Xiong,
+                  Zhiyuan Xiang, Dafeng Chi, Yuzheng Zhuang, Ruodai Li, Liyi Luo, Wei Tan,
+                  Dongjiang Li, Yihang Li, Qingrong He, Jiaming Liang, Mingxi Luo, Chen Cai,
+                  Hui Zhang, Peng Hao, Song Wang, Ning Qiao, Yince Gao,
+                  <strong>Lei Kang</strong>, Junwu Xiong, Jiawei Li, Hui Shen, Yicheng Gong,
+                  Nan Duan, Liang Lin
+
+                  <br>
+                  <em>arXiv, 2026</em>
+                  <br>
+
+                  <a href="https://arxiv.org/abs/2606.16776">Paper</a>
+                  /
+                  <a href="https://joyai-sim.github.io/">Project</a>
+
+                  <br>
+
+                  <span class="tag">Embodied Simulation</span>
+                  <span class="tag">Robot Data</span>
+                  <span class="tag">Digital Twin</span>
+                  <span class="tag">Evaluation</span>
+
+                  <p class="paper-note">
+                    A simulation-enabled interconversion toolchain for human-robot aligned model evaluation and data generation,
+                    connecting robot trials, simulation, and human demonstrations through reusable cloud-based infrastructure.
+                  </p>
+                </td>
+              </tr>
+
+              <!-- NavSpace -->
+              <tr class="paper-card">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img class="paper-img" src="images/navspace.png" alt="NavSpace">
+                </td>
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2510.08173">
+                    <span class="papertitle">
+                      NavSpace: How Navigation Agents Follow Spatial Intelligence Instructions
+                    </span>
+                  </a>
+
+                  <br>
+
+                  Haolin Yang*, Yuxing Long*, Zhuoyuan Yu, Zihan Yang, Minghan Wang,
+                  Jiapeng Xu, Yihan Wang, Ziyan Yu, Wenzhe Cai,
+                  <strong>Lei Kang</strong>, Hao Dong
+
+                  <br>
+                  <em>arXiv</em>
+                  <br>
+
+                  <a href="https://arxiv.org/abs/2510.08173">Paper</a>
+                  /
+                  <a href="https://github.com/">Project</a>
+
+                  <br>
+
+                  <span class="tag">Navigation</span>
+                  <span class="tag">Spatial Intelligence</span>
+                  <span class="tag">Embodied Agents</span>
+
+                  <p class="paper-note">
+                    A benchmark and model for evaluating how navigation agents understand and follow spatial intelligence instructions.
+                  </p>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+
+          <!-- Internships -->
+          <h2>Internships</h2>
+          <ul>
+            <li>
+              <strong>Jul 2025 - Present</strong>,
+              JD Technology
+            </li>
+            <li>
+              <strong>Apr 2025 - Jul 2025</strong>,
+              Center on Frontiers of Computing Studies, Peking University
+            </li>
+          </ul>
+
+          <!-- Services -->
+          <h2>Services</h2>
+          <p class="small">
+            More information will be updated soon.
           </p>
-        </td>
-      </tr>
-			
-      <tr onmouseout="navspace_stop()" onmouseover="navspace_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='navspace_image'>
-            <img src='images/2025NavSpace.jpg' width="170"></div>
-            <img src='images/2025NavSpace.jpg' width="170">
-          </div>
-          <script type="text/javascript">
-            function navspace_start() {
-              document.getElementById('navspace_image').style.opacity = "1";
-            }
 
-            function navspace_stop() {
-              document.getElementById('navspace_image').style.opacity = "0";
-            }
-            navspace_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="">
-            <span class="papertitle">NavSpace: How Navigation Agents Follow Spatial Intelligence Instructions</span>
-          </a>
-          <br>
-          Haolin Yang*, Yuxing Long*, Zhuoyuan Yu, Zihan Yang, Minghan Wang, Jiapeng Xu, Yihan Wang, Ziyan Yu, Wenzhe Cai, Lei Kang, Hao Dong
-          <br>
-          <em>Arxiv</em>
-          <br>
-          <a href="https://arxiv.org/abs/2510.08173">Paper</a>
-	  /
-	  <a href="https://github.com/TidalHarley/NavSpace">Project</a>
-          <p></p>
-          <p>
-          The first benchmark and model for navigation spatial intelligence.
+          <!-- Awards -->
+          <h2>Selected Awards and Honors</h2>
+          <ul>
+            <li>Siyuan Times Special Scholarship of Beijing Jiaotong University, 2019</li>
+            <li>First-Class Scholarship, 2019, 2020</li>
+            <li>Merit Student of Beijing Jiaotong University, 2019, 2020</li>
+          </ul>
+
+          <!-- Footer -->
+          <p class="small" style="text-align:center;margin-top:40px;margin-bottom:20px;">
+            Last updated: July 2026.
           </p>
+
         </td>
       </tr>
-          </tbody></table>
+    </tbody>
+  </table>
+</body>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Internships</h2>
-                <br>
-                <p>
-                  Jul 2025 - Present, JD Technology <br>
-                  Apr 2025 - Jul 2025, Center on Frontiers of Computing Studies (CFCS), Peking University <br>
-                </p>
-        </td>
-      </tr>
-          </tbody></table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Services</h2>
-                <br> 
-              </td>
-            </tr>
-          </tbody></table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Selected Awards and Honors</h2>
-                <br> 
-                <p>
-                  Siyuan Times Special Scholarship of Beijing Jiaotong University, 2019 <br>
-                  First-Class Scholarship, 2019，2020 <br>
-                  Merit Student of Beijing Jiaotong University, 2019，2020 <br>
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-		
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </table>
-  </body>
 </html>
